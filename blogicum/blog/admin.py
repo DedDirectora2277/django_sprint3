@@ -23,7 +23,7 @@ class CategoryAdmin(admin.ModelAdmin):
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
     list_display = (
-        'title', 'author', 'category', 'location', 
+        'title', 'author', 'category', 'location',
         'is_published', 'pub_date', 'created_at'
     )
     list_editable = ('is_published', 'category', 'location')
